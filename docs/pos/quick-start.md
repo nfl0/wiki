@@ -33,8 +33,8 @@ Keep up with the latest builder updates from the Polygon team and the community 
 POS is a sidechain secured by a set of economically-incentivized validators whose main goals are to attest to correct state transitions and guarantee the security of the network.
 Driven toward the scalability of the Ethereum network, it aims at providing a low-cost blockchain service, with negligible fees compared to L1, and at the same time benefit from the Ethereum battle-tested security.
 
-### POS architecture
-The [design system](/docs/pos/polygon-architecture.md) of the Polygon POS entangles 3 layers: Ethereum (Layer 1), the Tendermint-based Heimdall and GoEthereum-based Bor.
+## Architecture Overview
+The [system design](/docs/pos/polygon-architecture.md) of the Polygon PoS includes 3 layers: Ethereum (Layer 1), the Tendermint-based Heimdall and GoEthereum-based Bor.
 
 In our design, Ethereum provides smart contracts that support the validator community, such as the ones for staking MATIC and sending out rewards, as well as checkpoint contracts that sync the state of the sidechain with layer 1.
 The two other instances of the Polygon ecosystem, Heimdall and Bor, are in charge of all the logic running inside layer 2. 
@@ -47,7 +47,7 @@ With Polygon 2.0 and its proposal to position Polygon as the value layer of the 
 
 The zkValidium name is transparent: the POS whose security and consensus derived solely from the validators work, will now include zero-knowledge proofs and request those same validators to act as decentralized sequencers, that is, being responsible to decide which transactions to include in a block and in which order.
 
-Although this new technology might serve different purposes compared to the zkEVM, the major idea behind Polygon 2.0 is to integrate all solutions. 
+Polygon 2.0 is designed as a collection of zk-based Layer 2 solutions, aiming for unified liquidity and unlimited scalability. Within this vision, the newly evolved PoS mainnet serves as a specialized zk Layer 2, ensuring both scalability and arbitrary execution. 
 
 ### Building on Polygon
 
@@ -55,7 +55,7 @@ If you are an Ethereum developer, you are already a Polygon developer. Simply sw
 
 You can deploy decentralized applications to either Polygon Mumbai Testnet or the Mainnet. The Polygon Mumbai Testnet connects with the Ethereum Goërli Testnet, which acts as its ParentChain.
 
-## Deploy on POS
+## How to Deploy a Smart Contract on PoS
 
 ### Building a new dApp on Polygon?
 
@@ -65,9 +65,9 @@ Suppose you have no prior experience building decentralized applications. In tha
 
 Read [our tutorials](/docs/category/deploy-a-contract) to learn how to deploy a dApp on Polygon.
 
-## Connect to POS
+## How to Connect to PoS
 
-### Connecting via RPCs
+### Connect via RPC
 
 You can add Polygon to MetaMask or Arkane, which allows you to connect to Polygon using [RPC](https://docs.polygon.technology/docs/tools/wallets/metamask/config-polygon-on-metamask/).
 
@@ -100,7 +100,7 @@ main();
 
 ```
 
-### Connect your dApp to POS
+## How to Connect your dApp to PoS
 
 If you already have a decentralized application and are looking for a platform to help you scale efficiently, then you are at the right place because Polygon allows you to:
 
@@ -109,13 +109,12 @@ If you already have a decentralized application and are looking for a platform t
 
 ### Bridge assets
 
-By using the [Polygon main site wallet](https://wallet.polygon.technology/) you have access to all bridge solutions that POS offers. Manage cross-chain asset transfers from and to POS seamlessly with the following features:
+By using the [Polygon wallet suite](https://wallet.polygon.technology/), you have access to all interoperability solutions compatible with PoS. Manage cross-chain asset transfers to and from PoS with the following features:
 
-- [Native bridge](https://wallet.polygon.technology/polygon/bridge/deposit) : the safest and fastest way to bridge cross-chain assets to the Polygon chain. 
+- [Native bridge](https://wallet.polygon.technology/polygon/bridge/deposit): the fastest and safest way to bridge cross-chain assets to PoS mainnet. 
 - [Faster bridges](https://wallet.polygon.technology/polygon/fast-withdraw) : third-party bridging services that aid cross-chain transfers.
-- [Token mapper](https://mapper.polygon.technology/): the way to map tokens between Polygon and Ethereum.
-- [Bridge explorer](https://bridge-explorer.polygon.technology/deposits) : check figures and transactions happening on the bridge.
-- [Token swap](https://wallet.polygon.technology/polygon/token-swap) : easily exchange tokens on POS.
+- [Token mapper](https://mapper.polygon.technology/): a method to map tokens between Ethereum and Polygon.
+- [Token swap](https://wallet.polygon.technology/polygon/token-swap): seamlessly exchange tokens on PoS.
 
 ## Interact with POS
 ### Wallets
