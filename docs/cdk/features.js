@@ -19,7 +19,7 @@ export const firstRow = [
     },
     {
         title: "Deployment Differences",
-        linkUrl: "",
+        linkUrl: "/docs/cdk/differences-validium-zkevm",
         imageUrl: "/img/supernets/supernets-logo.png",
         description: "Explore the distinctions between deploying a CDK-developed chain with validium versus Polygon's zkEVM."
     },
